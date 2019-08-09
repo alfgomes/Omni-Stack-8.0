@@ -8,9 +8,15 @@ const LikeController = require('./controllers/LikeController');
 //const DislikeController = require('./controllers/DislikeController');
 
 //GET
-// routes.get('/', (req, res) => {
-//   return res.json({ message: `Hello ${req.query.name}` });
-// });
+routes.get('/', (req, res) => {
+  var name = req.query.name ? req.query.name : 'World';
+  var message = `Hello ${name}`;
+  if (req.query.name) {
+    return res.json({ message: message });
+  } else {
+    return res.send(message);
+  }
+});
 routes.get('/devs', DevController.index);
 
 //POST
