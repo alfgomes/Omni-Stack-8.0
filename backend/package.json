@@ -13,7 +13,7 @@
     { "name": "André Gomes", "email": "alfgomes@outlook.com", "url": "http://" }
   ],
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "cls && nodemon src/server.js"
   },
   "config": {
     "port": "3333"
