@@ -1,0 +1,37 @@
+UTILIZANDO O POWERSHELL
+
+Instalar o Chocolatey:
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+Instalar o NodeJS:
+cinst nodejs.install --version 10.16.1
+
+Instalar o Yarn:
+choco install yarn
+
+COMANDOS DO YARN
+Instalando todas as dependências:
+yarn install
+
+OPÇÕES:
+--silent (Execute a instalação do fio sem imprimir o log de instalação.)
+--force (Forçando um novo download de todos os pacotes.)
+--production (Não instalará nenhum pacote listado em devDependencies.)
+--check-files (Verifica se os arquivos já instalados node_modules não foram removidos.)
+--ignore-optional (Não instale dependências opcionais.)
+--update-checksums (Atualize as somas de verificação no arquivo de travamento yarn.lock se houver uma incompatibilidade entre elas e a soma de verificação do pacote.)
+--audit (Verifica problemas de segurança conhecidos com os pacotes instalados. Uma contagem dos problemas encontrados será adicionada à saída. Use o comando yarn audit para detalhes adicionais. Ao contrário do npm, que executa automaticamente uma auditoria em cada instalação, o yarn só o fará quando solicitado.)
+
+Iniciar o servidor NODEJS:
+yarn dev
+
+
+
+
+
+
+
+
+
+
+
