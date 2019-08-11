@@ -22,10 +22,18 @@ OPÇÕES:
 --update-checksums (Atualize as somas de verificação no arquivo de travamento yarn.lock se houver uma incompatibilidade entre elas e a soma de verificação do pacote.)
 --audit (Verifica problemas de segurança conhecidos com os pacotes instalados. Uma contagem dos problemas encontrados será adicionada à saída. Use o comando yarn audit para detalhes adicionais. Ao contrário do npm, que executa automaticamente uma auditoria em cada instalação, o yarn só o fará quando solicitado.)
 
+
+Criar o projeto backend:
+
+
+Criar o projeto frontend:
+yarn create react-app frontend
+
 Iniciar o servidor NODEJS:
 yarn dev
 
-
+Iniciar a aplicação React:
+yarn start
 
 
 
