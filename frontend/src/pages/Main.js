@@ -3,6 +3,7 @@ import io from 'socket.io-client';
 import { Link } from 'react-router-dom';
 import './Main.css';
 import api from '../services/api';
+import { baseURL} from '../config';
 
 //Importando os assets da página...
 import logo from '../assets/logo.svg';
@@ -27,7 +28,7 @@ export default function Main({ match }) {
   }, [match.params.id]);
 
   useEffect(() => {
-    const socket = io('http://localhost:3333', {
+    const socket = io(baseURL, {
       query: { user: match.params.id }
     });
 
